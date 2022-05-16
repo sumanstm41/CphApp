@@ -31,6 +31,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import DetailScreen from './src/screens/DetailScreen';
 import StackNavigation from './src/navigation/StackNavigation';
 import BottomTabNavigator from './src/navigation/BottomTabNavigator';
+import MainNavigation from './src/navigation/MainNavigation';
 
 const Section: React.FC<{
   title: string;
@@ -71,8 +72,7 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      {/* <StackNavigation /> */}
-      <BottomTabNavigator />
+      <MainNavigation />
     </NavigationContainer>
   );
 };
