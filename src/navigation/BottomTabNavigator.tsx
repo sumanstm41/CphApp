@@ -6,6 +6,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import HomeScreen from '../screens/HomeScreen';
 import SettingScreen from '../screens/SettingScreen';
 import AboutScreen from '../screens/AboutScreen';
+import StackNavigation from './StackNavigation';
 export type BottomTabParamList = {
   HomeTab: undefined;
   SettingsTab: undefined;
@@ -15,10 +16,13 @@ const Tab = createBottomTabNavigator<BottomTabParamList>();
 
 const BottomTabNavigator = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}>
       <Tab.Screen
         name="HomeTab"
-        component={HomeScreen}
+        component={StackNavigation}
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({color, size}) => (
