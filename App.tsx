@@ -29,6 +29,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import DetailScreen from './src/screens/DetailScreen';
+import StackNavigation from './src/navigation/StackNavigation';
+import BottomTabNavigator from './src/navigation/BottomTabNavigator';
 
 const Section: React.FC<{
   title: string;
@@ -69,14 +71,8 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen
-          name="Detail"
-          component={DetailScreen}
-          options={{title: 'Detail'}}
-        />
-      </Stack.Navigator>
+      {/* <StackNavigation /> */}
+      <BottomTabNavigator />
     </NavigationContainer>
   );
 };
