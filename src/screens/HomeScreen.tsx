@@ -7,7 +7,12 @@ const HomeScreen = ({navigation}: {navigation: any}) => {
       <Text>HomeScreen</Text>
       <Button
         title="Go to Details"
-        onPress={() => navigation.navigate('Detail')}
+        onPress={() =>
+          navigation.navigate('Detail', {
+            projectName: 'Copnhagen Tourism Project',
+            version: '0.0.1',
+          })
+        }
       />
     </View>
   );
