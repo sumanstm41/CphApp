@@ -1,4 +1,4 @@
-import {View, Text, Button} from 'react-native';
+import {View, Text, Button, StyleSheet} from 'react-native';
 import React from 'react';
 
 const HomeScreen = ({navigation}: {navigation: any}) => {
@@ -14,8 +14,27 @@ const HomeScreen = ({navigation}: {navigation: any}) => {
           })
         }
       />
+      <Button
+        title="Flat List Component"
+        onPress={() => navigation.navigate('RnFlatListUser')}
+      />
+      <Button
+        title="Flat List User"
+        onPress={() => navigation.navigate('RnFlatListUser')}
+      />
+      <Button
+        title="Touchable Opacity"
+        onPress={() => navigation.navigate('RnTouchableOpacity')}
+      />
     </View>
   );
 };
 
 export default HomeScreen;
+const styles = StyleSheet.create({
+  Button: {
+    flex: 1,
+    padding: 3,
+    backgroundColor: 'red',
+  },
+});

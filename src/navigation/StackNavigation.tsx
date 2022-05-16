@@ -4,6 +4,9 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
 import DetailScreen from '../screens/DetailScreen';
+import RnFlatListUser from '../components/RnFlatListUser';
+import RnFlatList from '../components/RnFlatList';
+import RnTouchableOpacity from '../components/RnTouchableOpacity';
 
 const StackNavigation = () => {
   const Stack = createNativeStackNavigator();
@@ -15,6 +18,9 @@ const StackNavigation = () => {
         component={DetailScreen}
         options={{title: 'Detail'}}
       />
+      <Stack.Screen name="RnFlatList" component={RnFlatList} />
+      <Stack.Screen name="RnFlatListUser" component={RnFlatListUser} />
+      <Stack.Screen name="RnTouchableOpacity" component={RnTouchableOpacity} />
     </Stack.Navigator>
   );
 };
