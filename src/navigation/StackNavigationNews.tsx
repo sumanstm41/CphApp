@@ -4,6 +4,7 @@ import NewsList from '../screens/news/components/NewsList';
 import NewsListDetail from '../screens/news/components/NewsListDetail';
 import HomeScreen from '../screens/HomeScreen';
 import MainNewsScreen from '../screens/news/MainNewsScreen';
+import NewsListDetailLink from '../screens/news/components/NewsListDetailLink';
 
 const StackNavigationNews = () => {
   const Stack1 = createNativeStackNavigator();
@@ -18,6 +19,7 @@ const StackNavigationNews = () => {
       />
       {/* <Stack1.Screen name="NewsList" component={NewsList} /> */}
       <Stack1.Screen name="NewsListDetail" component={NewsListDetail} />
+      <Stack1.Screen name="NewsListDetailLink" component={NewsListDetailLink} />
     </Stack1.Navigator>
   );
 };

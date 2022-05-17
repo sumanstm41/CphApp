@@ -1,7 +1,7 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React, {useState, useEffect} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import Autocomplete from 'react-native-autocomplete-input';
+// import Autocomplete from 'react-native-autocomplete-input';
 import NewsList from './components/NewsList';
 import NewsSearch from './components/NewsSearch';
 
