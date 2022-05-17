@@ -7,6 +7,7 @@ import DetailScreen from '../screens/DetailScreen';
 import RnFlatListUser from '../components/RnFlatListUser';
 import RnFlatList from '../components/RnFlatList';
 import RnTouchableOpacity from '../components/RnTouchableOpacity';
+import RnFlexBox from '../components/RnFlexBox';
 
 const StackNavigation = () => {
   const Stack = createNativeStackNavigator();
@@ -21,6 +22,7 @@ const StackNavigation = () => {
       <Stack.Screen name="RnFlatList" component={RnFlatList} />
       <Stack.Screen name="RnFlatListUser" component={RnFlatListUser} />
       <Stack.Screen name="RnTouchableOpacity" component={RnTouchableOpacity} />
+      <Stack.Screen name="RnFlexBox" component={RnFlexBox} />
     </Stack.Navigator>
   );
 };

@@ -26,6 +26,10 @@ const HomeScreen = ({navigation}: {navigation: any}) => {
         title="Touchable Opacity"
         onPress={() => navigation.navigate('RnTouchableOpacity')}
       />
+      <Button
+        title="Flex Box"
+        onPress={() => navigation.navigate('RnFlexBox')}
+      />
     </View>
   );
 };
