@@ -12,6 +12,7 @@ export type BottomTabParamList = {
   HomeTab: undefined;
   SettingsTab: undefined;
   AboutTab: undefined;
+  NewsTab: undefined;
 };
 const Tab = createBottomTabNavigator<BottomTabParamList>();
 
