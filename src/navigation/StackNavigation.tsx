@@ -15,7 +15,11 @@ const StackNavigation = () => {
   const Stack = createNativeStackNavigator();
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name="Detail"
         component={DetailScreen}
@@ -27,8 +31,8 @@ const StackNavigation = () => {
       <Stack.Screen name="RnFlexBox" component={RnFlexBox} />
 
       {/* News Navigation */}
-      <Stack.Screen name="NewsList" component={NewsList} />
-      <Stack.Screen name="NewsListDetail" component={NewsListDetail} />
+      {/* <Stack.Screen name="NewsList" component={NewsList} />
+      <Stack.Screen name="NewsListDetail" component={NewsListDetail} /> */}
     </Stack.Navigator>
   );
 };

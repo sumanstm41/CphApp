@@ -8,6 +8,7 @@ import SettingScreen from '../screens/SettingScreen';
 import AboutScreen from '../screens/AboutScreen';
 import StackNavigation from './StackNavigation';
 import MainNewsScreen from '../screens/news/MainNewsScreen';
+import StackNavigationNews from './StackNavigationNews';
 export type BottomTabParamList = {
   HomeTab: undefined;
   SettingsTab: undefined;
@@ -34,11 +35,11 @@ const BottomTabNavigator = () => {
       />
       <Tab.Screen
         name="NewsTab"
-        component={MainNewsScreen}
+        component={StackNavigationNews}
         options={{
           tabBarLabel: 'News',
           tabBarIcon: ({color, size}) => (
-            <MaterialCommunityIcons name="home" color={color} size={size} />
+            <MaterialCommunityIcons name="News" color={color} size={size} />
           ),
         }}
       />

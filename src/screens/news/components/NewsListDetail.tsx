@@ -1,16 +1,17 @@
 import {View, Text, Button} from 'react-native';
 import React from 'react';
 
-const NewsListDetail = ({navigation: {goBack}}) => {
+const NewsListDetail = ({route, navigation}: {route: any; navigation: any}) => {
+  const {title, imageName} = route.params;
   return (
     <View>
-      <Text>Title</Text>
-      <Text>Image</Text>
+      <Text>Title: {title}</Text>
+      <Text>Title: {imageName}</Text>
       <Text>Description</Text>
       <Text>NewsListDetail</Text>
       <Button
-        onPress={() => goBack()}
-        title="Return to the previous screen from the Details component"
+        // onPress={() => goBack()}
+        title="Return"
       />
     </View>
   );

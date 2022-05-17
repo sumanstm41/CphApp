@@ -17,8 +17,8 @@ const MainNewsScreen = ({navigation}: {navigation: any}) => {
       <TouchableOpacity
         onPress={() =>
           navigation.navigate('NewsListDetail', {
-            imageName: 'Copnhagen Image',
-            title: 'This is test titile for displaying data',
+            imageName: 'Test Image',
+            title: 'Test Title',
           })
         }>
         <NewsList title="Test Title" imageName="Test Image" />
