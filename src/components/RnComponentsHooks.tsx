@@ -1,4 +1,4 @@
-import {View, Text, Button} from 'react-native';
+import {View, Text, Button, StyleSheet} from 'react-native';
 import React, {FC, useState} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
@@ -27,16 +27,18 @@ const Wizard: FC<IProps> = ({children}) => {
   return (
     <SafeAreaView>
       <Text>{currentContent}</Text>
-      {activeContent > 0 ? (
-        <Button title="Previous" onPress={onPreviousClick}>
-          Previous
-        </Button>
-      ) : null}
-      {activeContent < contents.length + 1 ? (
-        <Button title="Next" onPress={onNextClick}>
-          Next
-        </Button>
-      ) : null}
+      <View style={{flexDirection: 'row'}}>
+        {activeContent > 0 ? (
+          <View style={styles.buttonStyle}>
+            <Button title="Previous" onPress={onPreviousClick} />
+          </View>
+        ) : null}
+        {activeContent < contents.length + 1 ? (
+          <View style={styles.buttonStyle}>
+            <Button title="Next" onPress={onNextClick} />
+          </View>
+        ) : null}
+      </View>
     </SafeAreaView>
   );
 };
@@ -53,5 +55,17 @@ const RnComponentsHooks = () => {
     </SafeAreaView>
   );
 };
-
+const styles = StyleSheet.create({
+  backgroundVideo: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+  },
+  buttonStyle: {
+    marginHorizontal: 20,
+    marginTop: 5,
+  },
+});
 export default RnComponentsHooks;
