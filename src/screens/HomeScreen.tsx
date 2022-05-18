@@ -30,6 +30,10 @@ const HomeScreen = ({navigation}: {navigation: any}) => {
         title="Flex Box"
         onPress={() => navigation.navigate('RnFlexBox')}
       />
+      <Button
+        title="Components Hooks"
+        onPress={() => navigation.navigate('RnComponentsHooks')}
+      />
     </View>
   );
 };
