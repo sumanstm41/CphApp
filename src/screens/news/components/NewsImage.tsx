@@ -4,7 +4,7 @@ import React from 'react';
 const Image = props => {
   return (
     <View>
-      <Text>{props.imageName}</Text>
+      <Text>Something: {props.imageName}</Text>
     </View>
   );
 };

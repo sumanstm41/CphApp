@@ -1,19 +1,22 @@
 import {View, Text, Button, StyleSheet} from 'react-native';
-import React, {FC, useState} from 'react';
+import React, {useState} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 // https://psdev.nu/confluence/display/VAS/____Polymorphic+components+with+Typescript
+// https://egghead.io/lessons/react-create-a-wizard-component-using-compound-components-and-usecontext-react-hook
 // Polymorphic components with Typescript
-interface IProps {
+interface IChildrenProps {
   children: any;
 }
 const Page1 = () => <Text>Page 1</Text>;
 const Page2 = () => <Text>Page 2</Text>;
 const Page3 = () => <Text>Page 3</Text>;
 
-const Wizard: FC<IProps> = ({children}) => {
+const Wizard = ({children}: IChildrenProps) => {
   const [activeContent, setActiveContent] = useState(0);
+
   const contents = React.Children.toArray(children);
+
   const currentContent = contents[activeContent];
 
   const onPreviousClick = () => {
@@ -55,6 +58,7 @@ const RnComponentsHooks = () => {
     </SafeAreaView>
   );
 };
+
 const styles = StyleSheet.create({
   backgroundVideo: {
     position: 'absolute',
@@ -68,4 +72,5 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
 });
+
 export default RnComponentsHooks;
