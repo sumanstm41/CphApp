@@ -23,6 +23,10 @@ const HomeScreen = ({navigation}: {navigation: any}) => {
         onPress={() => navigation.navigate('RnFlatListUser')}
       />
       <Button
+        title="Interface Components"
+        onPress={() => navigation.navigate('RnInterface')}
+      />
+      <Button
         title="Touchable Opacity"
         onPress={() => navigation.navigate('RnTouchableOpacity')}
       />
@@ -31,8 +35,12 @@ const HomeScreen = ({navigation}: {navigation: any}) => {
         onPress={() => navigation.navigate('RnFlexBox')}
       />
       <Button
-        title="Components Hooks"
+        title="Hooks Components"
         onPress={() => navigation.navigate('RnComponentsHooks')}
+      />
+      <Button
+        title="Polymorphic Components"
+        onPress={() => navigation.navigate('RnPolymorphic')}
       />
     </View>
   );

@@ -1,5 +1,5 @@
 import {View, Text, Button, StyleSheet} from 'react-native';
-import React, {useState} from 'react';
+import React, {FC, useState} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 // https://psdev.nu/confluence/display/VAS/____Polymorphic+components+with+Typescript
@@ -14,9 +14,7 @@ const Page3 = () => <Text>Page 3</Text>;
 
 const Wizard = ({children}: IChildrenProps) => {
   const [activeContent, setActiveContent] = useState(0);
-
   const contents = React.Children.toArray(children);
-
   const currentContent = contents[activeContent];
 
   const onPreviousClick = () => {
@@ -58,7 +56,6 @@ const RnComponentsHooks = () => {
     </SafeAreaView>
   );
 };
-
 const styles = StyleSheet.create({
   backgroundVideo: {
     position: 'absolute',
@@ -72,5 +69,4 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
 });
-
 export default RnComponentsHooks;
