@@ -6247,7 +6247,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@*", "prop-types@^15.5.10", "prop-types@^15.6.1", "prop-types@^15.7.2", "prop-types@^15.8.1":
+"prop-types@*", "prop-types@^15.5.10", "prop-types@^15.6.1", "prop-types@^15.6.2", "prop-types@^15.7.2", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -6364,12 +6364,13 @@
   "resolved" "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.0.6.tgz"
   "version" "0.0.6"
 
-"react-native-ico-material-design@^3.3.1":
-  "integrity" "sha512-2RW0NIJNrkxOFk1yEDFehaYB4Cuur+6adMEJv73gNN/zTnsjVFvkHeiTxA4P9vQQ2+bl2/AcNyScWQBJWCukjA=="
-  "resolved" "https://registry.npmjs.org/react-native-ico-material-design/-/react-native-ico-material-design-3.3.1.tgz"
-  "version" "3.3.1"
+"react-native-ico-material-design@^1.5.3":
+  "integrity" "sha512-TzMj5+hPLyEkfSE/2njlGwLFwmbDFNml2Zmlr1MD70hacuS9eFMPpaumcV08tgu2I+UdFjpHZg25kYLuyxvtpQ=="
+  "resolved" "https://registry.npmjs.org/react-native-ico-material-design/-/react-native-ico-material-design-1.5.3.tgz"
+  "version" "1.5.3"
   dependencies:
-    "react-svg-main" "^2.2.6"
+    "react" "16.9.0"
+    "react-native-svg" "^9.13.3"
 
 "react-native-safe-area-context@^4.2.5", "react-native-safe-area-context@>= 3.0.0":
   "integrity" "sha512-nUil2de1gk/8ZB9IzIxFyGCiKeAYcHzJb/Tks2NzSkev1qH4MNR05DWYDSmW6vLT+y4mospLVyG/H5dyUd+KQQ=="
@@ -6391,7 +6392,7 @@
   dependencies:
     "prop-types" "^15.5.10"
 
-"react-native-svg@^9.13.6":
+"react-native-svg@^9.13.3":
   "integrity" "sha512-vjjuJhEhQCwWjqsgWyGy6/C/LIBM2REDxB40FU1PMhi8T3zQUwUHnA6M15pJKlQG8vaZyA+QnLyIVhjtujRgig=="
   "resolved" "https://registry.npmjs.org/react-native-svg/-/react-native-svg-9.13.6.tgz"
   "version" "9.13.6"
@@ -6466,13 +6467,6 @@
     "object-assign" "^4.1.1"
     "react-is" "^16.12.0 || ^17.0.0"
 
-"react-svg-main@^2.2.6":
-  "integrity" "sha512-0HPu9NKwkCsOvrWDqiT1fRqxrgb3g0qHbjbhfajeSbE4p2XYH2iMeQhUmQhmv49LEW26o6BQ58hU4ym1PQmsDA=="
-  "resolved" "https://registry.npmjs.org/react-svg-main/-/react-svg-main-2.2.6.tgz"
-  "version" "2.2.6"
-  dependencies:
-    "react-native-svg" "^9.13.6"
-
 "react-test-renderer@17.0.2":
   "integrity" "sha512-yaQ9cB89c17PUb0x6UfWRs7kQCorVdHlutU1boVPEsB8IDZH6n9tHxMacc3y0JoXOJUsZb/t/Mb8FUWMKaM7iQ=="
   "resolved" "https://registry.npmjs.org/react-test-renderer/-/react-test-renderer-17.0.2.tgz"
@@ -6501,6 +6495,15 @@
     "loose-envify" "^1.1.0"
     "object-assign" "^4.1.0"
     "prop-types" "^15.5.10"
+
+"react@16.9.0":
+  "integrity" "sha512-+7LQnFBwkiw+BobzOF6N//BdoNw0ouwmSJTEm9cglOOmsg/TMiFHZLe2sEoN5M7LgJTj9oHH0gxklfnQe66S1w=="
+  "resolved" "https://registry.npmjs.org/react/-/react-16.9.0.tgz"
+  "version" "16.9.0"
+  dependencies:
+    "loose-envify" "^1.1.0"
+    "object-assign" "^4.1.1"
+    "prop-types" "^15.6.2"
 
 "read-pkg-up@^7.0.1":
   "integrity" "sha512-zK0TB7Xd6JpCLmlLmufqykGE+/TlOePD6qKClNW7hHDKFh/J7/7gCWGR7joEQEW1bKq3a3yUZSObOoWLFQ4ohg=="

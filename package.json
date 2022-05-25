@@ -19,7 +19,7 @@
     "react-native": "0.68.2",
     "react-native-atoz-listview": "^0.0.7",
     "react-native-autocomplete-input": "^5.1.0",
-    "react-native-ico-material-design": "^3.3.1",
+    "react-native-ico-material-design": "^1.5.3",
     "react-native-safe-area-context": "^4.2.5",
     "react-native-screens": "^3.13.1",
     "react-native-search-box": "^0.0.20",
