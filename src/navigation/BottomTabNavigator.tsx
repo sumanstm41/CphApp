@@ -37,21 +37,30 @@ const BottomTabNavigator = () => {
         name="NewsTab"
         component={StackNavigationNews}
         options={{
-          tabBarLabel: 'News',
+          tabBarLabel: 'Discover',
           tabBarIcon: ({color, size}) => (
-            <MaterialCommunityIcons name="News" color={color} size={size} />
+            <MaterialCommunityIcons name="compass" color={color} size={size} />
           ),
         }}
       />
-      <Tab.Screen name="AboutTab" component={AboutScreen} />
+      <Tab.Screen
+        name="AboutTab"
+        component={AboutScreen}
+        options={{
+          tabBarLabel: 'World',
+          tabBarIcon: ({color, size}) => (
+            <MaterialCommunityIcons name="web" color={color} size={size} />
+          ),
+        }}
+      />
       <Tab.Screen
         name="SettingsTab"
         component={SettingScreen}
         options={{
           tabBarBadge: 3,
-          title: 'Setting',
+          title: 'Notification',
           tabBarIcon: ({focused, color, size}) => (
-            <Icon name="rocket" size={30} color="#900" />
+            <MaterialCommunityIcons name="bell" color={color} size={size} />
           ),
         }}
       />
