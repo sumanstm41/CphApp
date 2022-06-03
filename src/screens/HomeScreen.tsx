@@ -42,6 +42,11 @@ const HomeScreen = ({navigation}: {navigation: any}) => {
         title="Polymorphic Components"
         onPress={() => navigation.navigate('RnPolymorphic')}
       />
+      <Text>Udemy Courses</Text>
+      <Button
+        title="Polymorphic Components Udemy"
+        onPress={() => navigation.navigate('PolymorphicComponents')}
+      />
     </View>
   );
 };

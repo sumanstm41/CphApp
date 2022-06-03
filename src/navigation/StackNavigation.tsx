@@ -13,6 +13,7 @@ import NewsListDetail from '../screens/news/components/NewsListDetail';
 import RnComponentsHooks from '../components/RnComponentsHooks';
 import RnPolymorphic from '../components/RnPolymorphic';
 import RnInterface from '../components/RnInterface';
+import PolymorphicComponents from '../components/udemy/PolymorphicComponents';
 
 const StackNavigation = () => {
   const Stack = createNativeStackNavigator();
@@ -39,6 +40,10 @@ const StackNavigation = () => {
       <Stack.Screen name="RnComponentsHooks" component={RnComponentsHooks} />
       <Stack.Screen name="RnPolymorphic" component={RnPolymorphic} />
       <Stack.Screen name="RnInterface" component={RnInterface} />
+      <Stack.Screen
+        name="PolymorphicComponents"
+        component={PolymorphicComponents}
+      />
     </Stack.Navigator>
   );
 };

@@ -34,22 +34,22 @@ const BottomTabNavigator = () => {
         }}
       />
       <Tab.Screen
+        name="AboutTab"
+        component={AboutScreen}
+        options={{
+          tabBarLabel: 'search',
+          tabBarIcon: ({color, size}) => (
+            <MaterialCommunityIcons name="magnify" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen
         name="NewsTab"
         component={StackNavigationNews}
         options={{
           tabBarLabel: 'Discover',
           tabBarIcon: ({color, size}) => (
             <MaterialCommunityIcons name="compass" color={color} size={size} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="AboutTab"
-        component={AboutScreen}
-        options={{
-          tabBarLabel: 'World',
-          tabBarIcon: ({color, size}) => (
-            <MaterialCommunityIcons name="web" color={color} size={size} />
           ),
         }}
       />
