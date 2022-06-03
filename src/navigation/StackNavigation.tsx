@@ -1,5 +1,5 @@
 import {View, Text} from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
@@ -14,11 +14,15 @@ import RnComponentsHooks from '../components/RnComponentsHooks';
 import RnPolymorphic from '../components/RnPolymorphic';
 import RnInterface from '../components/RnInterface';
 import PolymorphicComponents from '../components/udemy/PolymorphicComponents';
+import OnBoarding from '../components/default/OnBoarding';
 
 const StackNavigation = () => {
+  const [count, setCount] = useState();
+  console.log(count);
   const Stack = createNativeStackNavigator();
   return (
     <Stack.Navigator>
+      <Stack.Screen name="OnBoarding" component={OnBoarding} />
       <Stack.Screen
         name="Home"
         component={HomeScreen}

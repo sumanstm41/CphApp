@@ -1,37 +1,12 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
-import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {StyleSheet, Text, useColorScheme, View} from 'react-native';
 import {NavigationContainer, StackActions} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import HomeScreen from './src/screens/HomeScreen';
-import DetailScreen from './src/screens/DetailScreen';
-import StackNavigation from './src/navigation/StackNavigation';
-import BottomTabNavigator from './src/navigation/BottomTabNavigator';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 import MainNavigation from './src/navigation/MainNavigation';
+import OnBoarding from './src/components/default/OnBoarding';
+import CustomOnBoarding from './src/components/default/CustomOnBoarding';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Section: React.FC<{
   title: string;
@@ -64,16 +39,15 @@ const Section: React.FC<{
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  const Stack = createNativeStackNavigator();
-
   return (
-    <NavigationContainer>
-      <MainNavigation />
-    </NavigationContainer>
+    <>
+      {/* {OnboardingStatus == true ? <OnBoarding /> : null} */}
+      {/* <OnBoarding /> */}
+      {/* <CustomOnBoarding /> */}
+      <NavigationContainer>
+        <MainNavigation />
+      </NavigationContainer>
+    </>
   );
 };
 
@@ -97,3 +71,6 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+function UseState(arg0: null): [any, any] {
+  throw new Error('Function not implemented.');
+}
